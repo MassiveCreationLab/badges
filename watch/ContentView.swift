@@ -23,6 +23,14 @@ struct ContentView: View {
             .navigationTitle(titleText)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink {
+                        HistoryView()
+                    } label: {
+                        Image(systemName: "calendar")
+                    }
+                    .buttonStyle(.plain)
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
                         TodayList()
@@ -30,7 +38,6 @@ struct ContentView: View {
                         Image(systemName: "list.bullet")
                     }
                     .buttonStyle(.plain)
-                    .controlSize(.mini)
                 }
             }
         }

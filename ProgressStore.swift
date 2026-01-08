@@ -42,6 +42,7 @@ final class ProgressStore {
         let today = todayKey()
         dict[today, default: []].append(Date())
         save(dict)
+        NotificationCenter.default.post(name: .progressChanged, object: nil)
     }
 
     func todayCount() -> Int {
@@ -73,4 +74,26 @@ final class ProgressStore {
     private func dayKey(for date: Date) -> String {
         dayFormatter.string(from: date)
     }
+    
+    func allDays() -> [Date] {
+        let dict = load()
+        let f = dayFormatter
+        return dict.keys.compactMap { f.date(from: $0) }.sorted(by: >)
+    }
+    
+    func delete(entry: Date, for date: Date = Date()) {
+        var dict = load()
+        let key = dayKey(for: date)
+
+        guard var arr = dict[key] else { return }
+
+        arr.removeAll { $0 == entry }
+        dict[key] = arr
+        save(dict)
+        NotificationCenter.default.post(name: .progressChanged, object: nil)
+    }
+}
+
+extension Notification.Name {
+    static let progressChanged = Notification.Name("progressChanged")
 }
