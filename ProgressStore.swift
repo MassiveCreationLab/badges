@@ -36,7 +36,7 @@ final class ProgressStore {
         defaults.set(data, forKey: key)
     }
 
-    // ✅ Append tap
+
     func addTap() {
         var dict = load()
         let today = todayKey()
@@ -44,13 +44,11 @@ final class ProgressStore {
         save(dict)
     }
 
-    // ✅ Count for today
     func todayCount() -> Int {
         let dict = load()
         return dict[todayKey()]?.count ?? 0
     }
 
-    // ✅ Full history (for charts later)
     func all() -> [String: [Date]] {
         load()
     }
@@ -58,5 +56,21 @@ final class ProgressStore {
     func todayEntries() -> [Date] {
         let dict = load()
         return dict[todayKey()] ?? []
+    }
+    
+    func count(for date: Date) -> Int {
+        let dict = load()
+        let key = dayKey(for: date)
+        return dict[key]?.count ?? 0
+    }
+
+    func entries(for date: Date) -> [Date] {
+        let dict = load()
+        let key = dayKey(for: date)
+        return dict[key] ?? []
+    }
+
+    private func dayKey(for date: Date) -> String {
+        dayFormatter.string(from: date)
     }
 }

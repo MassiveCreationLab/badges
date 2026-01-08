@@ -9,25 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var todayCount = 0
+    @State private var selectedDayOffset = 0
 
     var body: some View {
         NavigationStack {
-            VStack {
-                Spacer()
-                
-                Image("badge_\(todayCount)")
-                    .resizable()
-                    .scaledToFit()
-                
-                Spacer()
-                
-                Button("+1") {
-                    ProgressStore.shared.addTap()
-                    reload()
+            TabView(selection: $selectedDayOffset) {
+                ForEach(-7...0, id: \.self) { offset in
+                    DayView(dayOffset: offset)
+                        .tag(offset)
                 }
             }
-            .onAppear { reload() }
+            .tabViewStyle(.page)
+            .navigationTitle(titleText)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
@@ -39,21 +33,17 @@ struct ContentView: View {
                     .controlSize(.mini)
                 }
             }
-            .navigationTitle(titleText)
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
 
-    private func reload() {
-        todayCount = ProgressStore.shared.todayCount()
-    }
-    
     private var titleText: String {
+        let date = Calendar.current.date(byAdding: .day, value: selectedDayOffset, to: Date())!
         let f = DateFormatter()
-        f.dateFormat = "dd.MM.YYYY"
-        return "\(f.string(from: Date()))"
+        f.dateFormat = "dd.MM"
+        return "\(f.string(from: date))"
     }
 }
+
 
 
 #Preview {
