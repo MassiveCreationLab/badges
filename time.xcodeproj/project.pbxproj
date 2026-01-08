@@ -7,28 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36C958382F0E495B008BF43E /* time Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36C958372F0E495B008BF43E /* time Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36C958382F0E495B008BF43E /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 36C958372F0E495B008BF43E /* watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36C958712F0E5CAC008BF43E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C958702F0E5CAC008BF43E /* WidgetKit.framework */; };
 		36C958732F0E5CAC008BF43E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C958722F0E5CAC008BF43E /* SwiftUI.framework */; };
-		36C9587E2F0E5CB2008BF43E /* complicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 36C9586E2F0E5CAC008BF43E /* complicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36C9587E2F0E5CB2008BF43E /* complication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 36C9586E2F0E5CAC008BF43E /* complication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		36C958392F0E495B008BF43E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36C9582B2F0E495A008BF43E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36C958362F0E495B008BF43E;
-			remoteInfo = "time Watch App";
-		};
-		36C9584A2F0E4966008BF43E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36C9582B2F0E495A008BF43E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36C958362F0E495B008BF43E;
-			remoteInfo = "time Watch App";
-		};
-		36C958542F0E4967008BF43E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 36C9582B2F0E495A008BF43E /* Project object */;
 			proxyType = 1;
@@ -51,7 +37,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				36C958382F0E495B008BF43E /* time Watch App.app in Embed Watch Content */,
+				36C958382F0E495B008BF43E /* watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				36C9587E2F0E5CB2008BF43E /* complicationExtension.appex in Embed Foundation Extensions */,
+				36C9587E2F0E5CB2008BF43E /* complication.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,46 +56,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36C958312F0E495B008BF43E /* time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = time.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C958372F0E495B008BF43E /* time Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "time Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C958492F0E4966008BF43E /* time Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "time Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C958532F0E4967008BF43E /* time Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "time Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36C9586E2F0E5CAC008BF43E /* complicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = complicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C958312F0E495B008BF43E /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C958372F0E495B008BF43E /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C9586E2F0E5CAC008BF43E /* complication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = complication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C958702F0E5CAC008BF43E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		36C958722F0E5CAC008BF43E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		36C958852F0E66F3008BF43E /* complicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = complicationExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complicationExtension" target */ = {
+		36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complication" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 36C9586D2F0E5CAC008BF43E /* complicationExtension */;
+			target = 36C9586D2F0E5CAC008BF43E /* complication */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		36C9583B2F0E495B008BF43E /* time Watch App */ = {
+		36C9583B2F0E495B008BF43E /* watch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "time Watch App";
-			sourceTree = "<group>";
-		};
-		36C9584C2F0E4966008BF43E /* time Watch AppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "time Watch AppTests";
-			sourceTree = "<group>";
-		};
-		36C958562F0E4967008BF43E /* time Watch AppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "time Watch AppUITests";
+			path = watch;
 			sourceTree = "<group>";
 		};
 		36C958742F0E5CAC008BF43E /* complication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complicationExtension" target */,
+				36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complication" target */,
 			);
 			path = complication;
 			sourceTree = "<group>";
@@ -118,20 +91,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		36C958342F0E495B008BF43E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36C958462F0E4966008BF43E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36C958502F0E4967008BF43E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,10 +112,7 @@
 		36C9582A2F0E4959008BF43E = {
 			isa = PBXGroup;
 			children = (
-				36C958852F0E66F3008BF43E /* complicationExtension.entitlements */,
-				36C9583B2F0E495B008BF43E /* time Watch App */,
-				36C9584C2F0E4966008BF43E /* time Watch AppTests */,
-				36C958562F0E4967008BF43E /* time Watch AppUITests */,
+				36C9583B2F0E495B008BF43E /* watch */,
 				36C958742F0E5CAC008BF43E /* complication */,
 				36C9586F2F0E5CAC008BF43E /* Frameworks */,
 				36C958322F0E495B008BF43E /* Products */,
@@ -166,11 +122,9 @@
 		36C958322F0E495B008BF43E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36C958312F0E495B008BF43E /* time.app */,
-				36C958372F0E495B008BF43E /* time Watch App.app */,
-				36C958492F0E4966008BF43E /* time Watch AppTests.xctest */,
-				36C958532F0E4967008BF43E /* time Watch AppUITests.xctest */,
-				36C9586E2F0E5CAC008BF43E /* complicationExtension.appex */,
+				36C958312F0E495B008BF43E /* ios.app */,
+				36C958372F0E495B008BF43E /* watch.app */,
+				36C9586E2F0E5CAC008BF43E /* complication.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36C958302F0E495B008BF43E /* time */ = {
+		36C958302F0E495B008BF43E /* ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36C958612F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time" */;
+			buildConfigurationList = 36C958612F0E4967008BF43E /* Build configuration list for PBXNativeTarget "ios" */;
 			buildPhases = (
 				36C9582F2F0E495B008BF43E /* Resources */,
 				36C958602F0E4967008BF43E /* Embed Watch Content */,
@@ -199,16 +153,16 @@
 			dependencies = (
 				36C9583A2F0E495B008BF43E /* PBXTargetDependency */,
 			);
-			name = time;
+			name = ios;
 			packageProductDependencies = (
 			);
 			productName = time;
-			productReference = 36C958312F0E495B008BF43E /* time.app */;
+			productReference = 36C958312F0E495B008BF43E /* ios.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		36C958362F0E495B008BF43E /* time Watch App */ = {
+		36C958362F0E495B008BF43E /* watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36C9585D2F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch App" */;
+			buildConfigurationList = 36C9585D2F0E4967008BF43E /* Build configuration list for PBXNativeTarget "watch" */;
 			buildPhases = (
 				36C958332F0E495B008BF43E /* Sources */,
 				36C958342F0E495B008BF43E /* Frameworks */,
@@ -221,64 +175,18 @@
 				36C9587D2F0E5CB2008BF43E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				36C9583B2F0E495B008BF43E /* time Watch App */,
+				36C9583B2F0E495B008BF43E /* watch */,
 			);
-			name = "time Watch App";
+			name = watch;
 			packageProductDependencies = (
 			);
 			productName = "time Watch App";
-			productReference = 36C958372F0E495B008BF43E /* time Watch App.app */;
+			productReference = 36C958372F0E495B008BF43E /* watch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36C958482F0E4966008BF43E /* time Watch AppTests */ = {
+		36C9586D2F0E5CAC008BF43E /* complication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36C958642F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch AppTests" */;
-			buildPhases = (
-				36C958452F0E4966008BF43E /* Sources */,
-				36C958462F0E4966008BF43E /* Frameworks */,
-				36C958472F0E4966008BF43E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				36C9584B2F0E4966008BF43E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				36C9584C2F0E4966008BF43E /* time Watch AppTests */,
-			);
-			name = "time Watch AppTests";
-			packageProductDependencies = (
-			);
-			productName = "time Watch AppTests";
-			productReference = 36C958492F0E4966008BF43E /* time Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		36C958522F0E4967008BF43E /* time Watch AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36C958672F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch AppUITests" */;
-			buildPhases = (
-				36C9584F2F0E4967008BF43E /* Sources */,
-				36C958502F0E4967008BF43E /* Frameworks */,
-				36C958512F0E4967008BF43E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				36C958552F0E4967008BF43E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				36C958562F0E4967008BF43E /* time Watch AppUITests */,
-			);
-			name = "time Watch AppUITests";
-			packageProductDependencies = (
-			);
-			productName = "time Watch AppUITests";
-			productReference = 36C958532F0E4967008BF43E /* time Watch AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		36C9586D2F0E5CAC008BF43E /* complicationExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36C958802F0E5CB2008BF43E /* Build configuration list for PBXNativeTarget "complicationExtension" */;
+			buildConfigurationList = 36C958802F0E5CB2008BF43E /* Build configuration list for PBXNativeTarget "complication" */;
 			buildPhases = (
 				36C9586A2F0E5CAC008BF43E /* Sources */,
 				36C9586B2F0E5CAC008BF43E /* Frameworks */,
@@ -291,11 +199,11 @@
 			fileSystemSynchronizedGroups = (
 				36C958742F0E5CAC008BF43E /* complication */,
 			);
-			name = complicationExtension;
+			name = complication;
 			packageProductDependencies = (
 			);
 			productName = complicationExtension;
-			productReference = 36C9586E2F0E5CAC008BF43E /* complicationExtension.appex */;
+			productReference = 36C9586E2F0E5CAC008BF43E /* complication.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -313,14 +221,6 @@
 					};
 					36C958362F0E495B008BF43E = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					36C958482F0E4966008BF43E = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 36C958362F0E495B008BF43E;
-					};
-					36C958522F0E4967008BF43E = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 36C958362F0E495B008BF43E;
 					};
 					36C9586D2F0E5CAC008BF43E = {
 						CreatedOnToolsVersion = 16.2;
@@ -341,11 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36C958302F0E495B008BF43E /* time */,
-				36C958362F0E495B008BF43E /* time Watch App */,
-				36C958482F0E4966008BF43E /* time Watch AppTests */,
-				36C958522F0E4967008BF43E /* time Watch AppUITests */,
-				36C9586D2F0E5CAC008BF43E /* complicationExtension */,
+				36C958302F0E495B008BF43E /* ios */,
+				36C958362F0E495B008BF43E /* watch */,
+				36C9586D2F0E5CAC008BF43E /* complication */,
 			);
 		};
 /* End PBXProject section */
@@ -359,20 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		36C958352F0E495B008BF43E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36C958472F0E4966008BF43E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36C958512F0E4967008BF43E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,20 +280,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36C958452F0E4966008BF43E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36C9584F2F0E4967008BF43E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36C9586A2F0E5CAC008BF43E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,22 +292,12 @@
 /* Begin PBXTargetDependency section */
 		36C9583A2F0E495B008BF43E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36C958362F0E495B008BF43E /* time Watch App */;
+			target = 36C958362F0E495B008BF43E /* watch */;
 			targetProxy = 36C958392F0E495B008BF43E /* PBXContainerItemProxy */;
-		};
-		36C9584B2F0E4966008BF43E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36C958362F0E495B008BF43E /* time Watch App */;
-			targetProxy = 36C9584A2F0E4966008BF43E /* PBXContainerItemProxy */;
-		};
-		36C958552F0E4967008BF43E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36C958362F0E495B008BF43E /* time Watch App */;
-			targetProxy = 36C958542F0E4967008BF43E /* PBXContainerItemProxy */;
 		};
 		36C9587D2F0E5CB2008BF43E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36C9586D2F0E5CAC008BF43E /* complicationExtension */;
+			target = 36C9586D2F0E5CAC008BF43E /* complication */;
 			targetProxy = 36C9587C2F0E5CB2008BF43E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -562,11 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "time Watch App/time Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = watch/time.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"time Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 4ABH3G998N;
+				DEVELOPMENT_ASSET_PATHS = "\"watch/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = time;
@@ -577,14 +439,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "badges provisioning";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -593,11 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "time Watch App/time Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = watch/time.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"time Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 4ABH3G998N;
+				DEVELOPMENT_ASSET_PATHS = "\"watch/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = time;
@@ -608,15 +474,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "badges provisioning";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -625,9 +493,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R2G2B2YYL;
 				INFOPLIST_KEY_CFBundleDisplayName = time;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -639,89 +508,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R2G2B2YYL;
 				INFOPLIST_KEY_CFBundleDisplayName = time;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		36C958652F0E4967008BF43E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.massivecreationlab.time-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/time Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/time Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
-			};
-			name = Debug;
-		};
-		36C958662F0E4967008BF43E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.massivecreationlab.time-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/time Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/time Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
-			};
-			name = Release;
-		};
-		36C958682F0E4967008BF43E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.massivecreationlab.time-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "time Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
-			};
-			name = Debug;
-		};
-		36C958692F0E4967008BF43E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.massivecreationlab.time-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "time Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Release;
 		};
@@ -730,10 +524,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = complicationExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = complication.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ABH3G998N;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = complication;
@@ -745,8 +541,10 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time.watchkitapp.complication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges.watchkitapp.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "badges watch complication";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -761,10 +559,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = complicationExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = complication.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ABH3G998N;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = complication;
@@ -776,8 +576,10 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.time.watchkitapp.complication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges.watchkitapp.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "badges watch complication";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -800,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36C9585D2F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch App" */ = {
+		36C9585D2F0E4967008BF43E /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36C9585E2F0E4967008BF43E /* Debug */,
@@ -809,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36C958612F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time" */ = {
+		36C958612F0E4967008BF43E /* Build configuration list for PBXNativeTarget "ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36C958622F0E4967008BF43E /* Debug */,
@@ -818,25 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36C958642F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36C958652F0E4967008BF43E /* Debug */,
-				36C958662F0E4967008BF43E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36C958672F0E4967008BF43E /* Build configuration list for PBXNativeTarget "time Watch AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36C958682F0E4967008BF43E /* Debug */,
-				36C958692F0E4967008BF43E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36C958802F0E5CB2008BF43E /* Build configuration list for PBXNativeTarget "complicationExtension" */ = {
+		36C958802F0E5CB2008BF43E /* Build configuration list for PBXNativeTarget "complication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36C958812F0E5CB2008BF43E /* Debug */,
