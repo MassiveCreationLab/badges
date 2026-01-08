@@ -11,6 +11,8 @@
 		36C958712F0E5CAC008BF43E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C958702F0E5CAC008BF43E /* WidgetKit.framework */; };
 		36C958732F0E5CAC008BF43E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C958722F0E5CAC008BF43E /* SwiftUI.framework */; };
 		36C9587E2F0E5CB2008BF43E /* complication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 36C9586E2F0E5CAC008BF43E /* complication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		495F67502F0FD78B008ED6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495F674B2F0FD78B008ED6EC /* Assets.xcassets */; };
+		495F676B2F0FF801008ED6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495F674B2F0FD78B008ED6EC /* Assets.xcassets */; };
 		4961C9262F0FD5900039E6C6 /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961C9252F0FD5900039E6C6 /* ProgressStore.swift */; };
 		4961C9272F0FD5900039E6C6 /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961C9252F0FD5900039E6C6 /* ProgressStore.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,7 @@
 		36C9586E2F0E5CAC008BF43E /* complication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = complication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C958702F0E5CAC008BF43E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		36C958722F0E5CAC008BF43E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		495F674B2F0FD78B008ED6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4961C9252F0FD5900039E6C6 /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +118,7 @@
 		36C9582A2F0E4959008BF43E = {
 			isa = PBXGroup;
 			children = (
+				495F674B2F0FD78B008ED6EC /* Assets.xcassets */,
 				4961C9252F0FD5900039E6C6 /* ProgressStore.swift */,
 				36C9583B2F0E495B008BF43E /* watch */,
 				36C958742F0E5CAC008BF43E /* complication */,
@@ -264,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495F67502F0FD78B008ED6EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495F676B2F0FF801008ED6EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

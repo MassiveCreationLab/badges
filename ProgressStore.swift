@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import WidgetKit
+
 
 final class ProgressStore {
     static let shared = ProgressStore()
 
-    private let defaults = UserDefaults(suiteName: "group.com.yourcompany.yourapp")!
+    private let defaults = UserDefaults(suiteName: "group.com.massivecreationlab.badges")!
     private let key = "progressByDay"
 
     private let dayFormatter: DateFormatter = {
@@ -43,6 +45,7 @@ final class ProgressStore {
         dict[today, default: []].append(Date())
         save(dict)
         NotificationCenter.default.post(name: .progressChanged, object: nil)
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     func todayCount() -> Int {
@@ -91,6 +94,7 @@ final class ProgressStore {
         dict[key] = arr
         save(dict)
         NotificationCenter.default.post(name: .progressChanged, object: nil)
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 
