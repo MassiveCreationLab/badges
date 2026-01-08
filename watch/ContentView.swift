@@ -8,26 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var count = 0
-    
-    
+
+    @State private var todayCount = 0
+
     var body: some View {
-        VStack {
-            Text("Projects")
-            Spacer()
-            Image("badge_\(count)")
-                .resizable()
-                .scaledToFit()
-                .clipped()
-            Spacer()
-            Button("+1"){
-                count += 1
+        NavigationStack {
+            VStack {
+                Spacer()
+                
+                Image("badge_\(todayCount)")
+                    .resizable()
+                    .scaledToFit()
+                
+                Spacer()
+                
+                Button("+1") {
+                    ProgressStore.shared.addTap()
+                    reload()
+                }
             }
+            .onAppear { reload() }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        TodayList()
+                    } label: {
+                        Image(systemName: "list.bullet")
+                    }
+                    .buttonStyle(.plain)
+                    .controlSize(.mini)
+                }
+            }
+            .navigationTitle(titleText)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+
+    private func reload() {
+        todayCount = ProgressStore.shared.todayCount()
+    }
+    
+    private var titleText: String {
+        let f = DateFormatter()
+        f.dateFormat = "dd.MM.YYYY"
+        return "\(f.string(from: Date()))"
     }
 }
+
 
 #Preview {
     ContentView()
