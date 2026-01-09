@@ -23,8 +23,7 @@ jobs:
           
           GITHUB_REPOSITORY: ${{ env.GITHUB_REPOSITORY }}
           GH_PAT: ${{ secrets.GH_PAT }}
-
+          
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           MATCH_REPOSITORY: ${{ secrets.MATCH_REPOSITORY }}
-          #          MATCH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
           FASTLANE_VERBOSE: 1
