@@ -1,7 +1,9 @@
-name: iOS TestFlight Deploy
+name: badges deployment
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - "main"
 
 jobs:
   deploy:
