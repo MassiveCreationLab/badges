@@ -56,7 +56,7 @@ platform :ios do
 
     build_app(
         workspace: "time.xcodeproj",
-        scheme: "watch",
+        scheme: "ios",
         export_method: "app-store"
     )
     end
