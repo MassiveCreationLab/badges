@@ -53,12 +53,15 @@ platform :ios do
     version = "0.0.#{run_number}"
 
     increment_version_number(
+      xcodeproj: "time.xcodeproj",
       version_number: version
     )
 
     increment_build_number(
+      xcodeproj: "time.xcodeproj",
       build_number: run_number
     )
+
   end
 
 
