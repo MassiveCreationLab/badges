@@ -83,6 +83,7 @@ platform :ios do
     build_app(
         project: "time.xcodeproj",
         scheme: "ios",
+        configuration: "Release",
         export_method: "app-store",
         export_options: {
           provisioningProfiles: {
