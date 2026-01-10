@@ -36,3 +36,11 @@ jobs:
           MATCH_REPOSITORY: ${{ secrets.MATCH_REPOSITORY }}
 
           GITHUB_REPOSITORY: ${{ github.repository }}
+      
+      - name: Dump Xcode build log
+        if: always()
+        run: |
+          echo "========== ios-ios.log =========="
+          cat /Users/runner/Library/Logs/gym/ios-ios.log || echo "Log file not found"
+          echo "================================"
+
