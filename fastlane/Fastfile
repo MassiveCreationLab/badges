@@ -68,15 +68,15 @@ platform :ios do
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 
-    lane :build do
+  lane :build do
     setup_ci
     sync_certificates
 
     build_app(
-        workspace: "time.xcodeproj",
+        project: "time.xcodeproj",
         scheme: "ios",
         export_method: "app-store"
     )
-    end
+  end
 
 end
