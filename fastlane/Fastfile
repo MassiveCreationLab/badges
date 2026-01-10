@@ -29,11 +29,19 @@ platform :ios do
     )
 
     match(
-        type: "appstore",
-        storage_mode: "git",
-        git_url: "git@github.com:#{match_org}/#{match_repo}.git",
-        app_identifier: APP_IDENTIFIERS,
-        git_branch: "master"
+      type: "development",
+      storage_mode: "git",
+      git_url: "git@github.com:#{match_org}/#{match_repo}.git",
+      app_identifier: APP_IDENTIFIERS,
+      git_branch: "master"
+    )
+
+    match(
+      type: "appstore",
+      storage_mode: "git",
+      git_url: "git@github.com:#{match_org}/#{match_repo}.git",
+      app_identifier: APP_IDENTIFIERS,
+      git_branch: "master"
     )
 
   end
