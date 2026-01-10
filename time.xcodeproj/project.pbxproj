@@ -552,7 +552,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
-				INFOPLIST_FILE = ios/info.plist;
+				INFOPLIST_FILE = ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,7 +571,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
-				INFOPLIST_FILE = ios/info.plist;
+				INFOPLIST_FILE = ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
