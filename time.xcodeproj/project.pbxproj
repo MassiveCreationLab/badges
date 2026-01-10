@@ -70,32 +70,49 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complication" target */ = {
+		496933332F12FC4D003F5894 /* Exceptions for "ios" folder in "complication" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 36C9586D2F0E5CAC008BF43E /* complication */;
 		};
-		49FB36052F12B8EA0084C69A /* Exceptions for "ios" folder in "ios" target */ = {
+		496933352F12FC6C003F5894 /* Exceptions for "ios" folder in "watch" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 36C958302F0E495B008BF43E /* ios */;
+			target = 36C958362F0E495B008BF43E /* watch */;
+		};
+		496933362F12FD1B003F5894 /* Exceptions for "watch" folder in "watch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36C958362F0E495B008BF43E /* watch */;
+		};
+		496933372F12FD1D003F5894 /* Exceptions for "complication" folder in "complication" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36C9586D2F0E5CAC008BF43E /* complication */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		36C9583B2F0E495B008BF43E /* watch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				496933362F12FD1B003F5894 /* Exceptions for "watch" folder in "watch" target */,
+			);
 			path = watch;
 			sourceTree = "<group>";
 		};
 		36C958742F0E5CAC008BF43E /* complication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				36C9587F2F0E5CB2008BF43E /* Exceptions for "complication" folder in "complication" target */,
+				496933372F12FD1D003F5894 /* Exceptions for "complication" folder in "complication" target */,
 			);
 			path = complication;
 			sourceTree = "<group>";
@@ -103,7 +120,8 @@
 		49FB35FD2F12B8CC0084C69A /* ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				49FB36052F12B8EA0084C69A /* Exceptions for "ios" folder in "ios" target */,
+				496933352F12FC6C003F5894 /* Exceptions for "ios" folder in "watch" target */,
+				496933332F12FC4D003F5894 /* Exceptions for "ios" folder in "complication" target */,
 			);
 			path = ios;
 			sourceTree = "<group>";
