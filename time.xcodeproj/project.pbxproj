@@ -445,7 +445,7 @@
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = time;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,7 +481,7 @@
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = time;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
-				INFOPLIST_KEY_CFBundleDisplayName = time;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
-				INFOPLIST_KEY_CFBundleDisplayName = time;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,7 +556,7 @@
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = complication/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = complication;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -592,7 +592,7 @@
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = complication/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = complication;
+				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
