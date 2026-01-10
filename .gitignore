@@ -3,3 +3,4 @@
 time.xcodeproj/project.xcworkspace/**
 Gemfile.lock
 fastlane/.env
+**/.DS_STORE
