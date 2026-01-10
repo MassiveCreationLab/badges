@@ -38,7 +38,7 @@ platform :ios do
 
   end
 
-  lane :set_version_from_ci do
+  lane :set_version do
     run_number = ENV["GITHUB_RUN_NUMBER"]
     UI.user_error!("GITHUB_RUN_NUMBER not set") if run_number.to_s.empty?
 
