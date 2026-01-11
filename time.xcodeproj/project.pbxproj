@@ -538,6 +538,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
+				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,6 +571,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
+				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
