@@ -69,61 +69,15 @@
 		4961C9252F0FD5900039E6C6 /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		496933332F12FC4D003F5894 /* Exceptions for "ios" folder in "complication" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 36C9586D2F0E5CAC008BF43E /* complication */;
-		};
-		496933352F12FC6C003F5894 /* Exceptions for "ios" folder in "watch" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 36C958362F0E495B008BF43E /* watch */;
-		};
-		496933362F12FD1B003F5894 /* Exceptions for "watch" folder in "watch" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 36C958362F0E495B008BF43E /* watch */;
-		};
-		496933372F12FD1D003F5894 /* Exceptions for "complication" folder in "complication" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 36C9586D2F0E5CAC008BF43E /* complication */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		36C9583B2F0E495B008BF43E /* watch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				496933362F12FD1B003F5894 /* Exceptions for "watch" folder in "watch" target */,
-			);
 			path = watch;
 			sourceTree = "<group>";
 		};
 		36C958742F0E5CAC008BF43E /* complication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				496933372F12FD1D003F5894 /* Exceptions for "complication" folder in "complication" target */,
-			);
 			path = complication;
-			sourceTree = "<group>";
-		};
-		49FB35FD2F12B8CC0084C69A /* ios */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				496933352F12FC6C003F5894 /* Exceptions for "ios" folder in "watch" target */,
-				496933332F12FC4D003F5894 /* Exceptions for "ios" folder in "complication" target */,
-			);
-			path = ios;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -151,7 +105,6 @@
 		36C9582A2F0E4959008BF43E = {
 			isa = PBXGroup;
 			children = (
-				49FB35FD2F12B8CC0084C69A /* ios */,
 				495F674B2F0FD78B008ED6EC /* Assets.xcassets */,
 				4961C9252F0FD5900039E6C6 /* ProgressStore.swift */,
 				36C9583B2F0E495B008BF43E /* watch */,
@@ -218,7 +171,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				36C9583B2F0E495B008BF43E /* watch */,
-				49FB35FD2F12B8CC0084C69A /* ios */,
 			);
 			name = watch;
 			packageProductDependencies = (
@@ -241,7 +193,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				36C958742F0E5CAC008BF43E /* complication */,
-				49FB35FD2F12B8CC0084C69A /* ios */,
 			);
 			name = complication;
 			packageProductDependencies = (
@@ -405,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -465,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -487,7 +438,6 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = watch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -522,7 +472,6 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = watch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -593,7 +542,6 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
-				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -627,7 +575,6 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 8R2G2B2YYL;
-				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = complication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
