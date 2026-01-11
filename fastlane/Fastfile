@@ -1,3 +1,9 @@
+RUN_NUMBER = ENV["GITHUB_RUN_NUMBER"]
+UI.user_error!("GITHUB_RUN_NUMBER not set") if RUN_NUMBER.to_s.empty?
+
+VERSION_NUMBER = "0.0.#{RUN_NUMBER}"
+ENV["VERSION_NUMBER"] = VERSION_NUMBER
+
 org, repo = (ENV["GITHUB_REPOSITORY"]||"").split("/")
 match_org, match_repo = (ENV["MATCH_REPOSITORY"]||"").split("/")
 
@@ -47,19 +53,15 @@ platform :ios do
   end
 
   lane :set_version do
-    run_number = ENV["GITHUB_RUN_NUMBER"]
-    UI.user_error!("GITHUB_RUN_NUMBER not set") if run_number.to_s.empty?
-
-    version = "0.0.#{run_number}"
 
     increment_version_number(
       xcodeproj: "time.xcodeproj",
-      version_number: version
+      version_number: VERSION_NUMBER
     )
 
     increment_build_number(
       xcodeproj: "time.xcodeproj",
-      build_number: run_number
+      build_number: RUN_NUMBER
     )
 
   end
@@ -69,6 +71,9 @@ platform :ios do
   lane :release do
     set_version
     build
+    create_app_store_version(
+      version_string: VERSION_NUMBER
+    )
     upload_to_app_store
   end
 
@@ -76,6 +81,9 @@ platform :ios do
   lane :beta do
     set_version
     build
+    create_app_store_version(
+      version_string: VERSION_NUMBER
+    )
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 
