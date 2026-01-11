@@ -69,6 +69,16 @@
 		4961C9252F0FD5900039E6C6 /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4969333B2F142E2F003F5894 /* Exceptions for "complication" folder in "complication" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36C9586D2F0E5CAC008BF43E /* complication */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		36C9583B2F0E495B008BF43E /* watch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -77,6 +87,9 @@
 		};
 		36C958742F0E5CAC008BF43E /* complication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4969333B2F142E2F003F5894 /* Exceptions for "complication" folder in "complication" target */,
+			);
 			path = complication;
 			sourceTree = "<group>";
 		};
