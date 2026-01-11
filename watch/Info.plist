@@ -8,5 +8,7 @@
    <string>$(CURRENT_PROJECT_VERSION)</string>
    <key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+   <key>WKWatchKitApp</key>
+   <true/>
 </dict>
 </plist>
