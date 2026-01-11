@@ -71,9 +71,6 @@ platform :ios do
   lane :release do
     set_version
     build
-    create_app_store_version(
-      version_string: VERSION_NUMBER
-    )
     upload_to_app_store
   end
 
@@ -81,9 +78,6 @@ platform :ios do
   lane :beta do
     set_version
     build
-    create_app_store_version(
-      version_string: VERSION_NUMBER
-    )
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 
