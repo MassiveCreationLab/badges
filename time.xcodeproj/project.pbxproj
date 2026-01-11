@@ -77,6 +77,20 @@
 			);
 			target = 36C9586D2F0E5CAC008BF43E /* complication */;
 		};
+		496933422F144108003F5894 /* Exceptions for "ios" folder in "watch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36C958362F0E495B008BF43E /* watch */;
+		};
+		496933432F14410A003F5894 /* Exceptions for "ios" folder in "complication" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36C9586D2F0E5CAC008BF43E /* complication */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -91,6 +105,15 @@
 				4969333B2F142E2F003F5894 /* Exceptions for "complication" folder in "complication" target */,
 			);
 			path = complication;
+			sourceTree = "<group>";
+		};
+		4969333C2F1440CB003F5894 /* ios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				496933422F144108003F5894 /* Exceptions for "ios" folder in "watch" target */,
+				496933432F14410A003F5894 /* Exceptions for "ios" folder in "complication" target */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -118,6 +141,7 @@
 		36C9582A2F0E4959008BF43E = {
 			isa = PBXGroup;
 			children = (
+				4969333C2F1440CB003F5894 /* ios */,
 				495F674B2F0FD78B008ED6EC /* Assets.xcassets */,
 				4961C9252F0FD5900039E6C6 /* ProgressStore.swift */,
 				36C9583B2F0E495B008BF43E /* watch */,
@@ -184,6 +208,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				36C9583B2F0E495B008BF43E /* watch */,
+				4969333C2F1440CB003F5894 /* ios */,
 			);
 			name = watch;
 			packageProductDependencies = (
@@ -206,6 +231,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				36C958742F0E5CAC008BF43E /* complication */,
+				4969333C2F1440CB003F5894 /* ios */,
 			);
 			name = complication;
 			packageProductDependencies = (
@@ -512,6 +538,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
+				INFOPLIST_FILE = ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +557,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8R2G2B2YYL;
+				INFOPLIST_FILE = ios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Badges;
 				PRODUCT_BUNDLE_IDENTIFIER = com.massivecreationlab.badges;
 				PRODUCT_NAME = "$(TARGET_NAME)";
