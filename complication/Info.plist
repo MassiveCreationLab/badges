@@ -6,6 +6,9 @@
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
+
+		<key>WKAppBundleIdentifier</key>
+		<string>com.massivecreationlab.badges.watchkitapp</string>
 	</dict>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
