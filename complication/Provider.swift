@@ -10,18 +10,24 @@ import WidgetKit
 struct Provider: TimelineProvider {
 
     func placeholder(in context: Context) -> Entry {
-        Entry(date: Date(), count: 0)
+        Entry(date: .now, count: 0, minor: 0)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) {
-        completion(Entry(date: Date(), count: ProgressStore.shared.todayCount()))
+        completion(Entry(
+            date: .now,
+            count: ProgressStore.shared.todayCount(),
+            minor: ProgressStore.shared.todayCrownProgress()
+        ))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
-        let count = ProgressStore.shared.todayCount()
-        let entry = Entry(date: Date(), count: count)
+        let entry = Entry(
+            date: .now,
+            count: ProgressStore.shared.todayCount(),
+            minor: ProgressStore.shared.todayCrownProgress()
+        )
 
-        // Reload when system feels like it, AND when app pushes reload
         completion(Timeline(entries: [entry], policy: .never))
     }
 }

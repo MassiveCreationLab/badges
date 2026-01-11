@@ -10,5 +10,6 @@ import SwiftUI
 
 struct Entry: TimelineEntry {
     let date: Date
-    let count: Int
+    let count: Int        // 0...3
+    let minor: Double     // 0...1
 }
