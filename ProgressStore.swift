@@ -11,6 +11,7 @@ import WidgetKit
 
 final class ProgressStore {
     static let shared = ProgressStore()
+    static let MAX_BADGE_LEVEL = 3
 
     private let defaults = UserDefaults(suiteName: "group.com.massivecreationlab.badges")!
     private let key = "progressByDay"
@@ -40,13 +41,19 @@ final class ProgressStore {
 
 
     func addTap() {
-        var dict = load()
         let today = todayKey()
+        var dict = load()
+        let current = dict[today]?.count ?? 0
+
+        guard current < ProgressStore.MAX_BADGE_LEVEL else { return }
+
         dict[today, default: []].append(Date())
         save(dict)
+
         NotificationCenter.default.post(name: .progressChanged, object: nil)
         WidgetCenter.shared.reloadAllTimelines()
     }
+
 
     func todayCount() -> Int {
         let dict = load()

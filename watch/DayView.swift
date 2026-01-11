@@ -27,24 +27,39 @@ struct DayView: View {
         _ = refreshTick
         return ProgressStore.shared.count(for: date)
     }
+    
+    private var rawCount: Int {
+        _ = refreshTick
+        return ProgressStore.shared.count(for: date)
+    }
+
+    private var clampedCount: Int {
+        min(rawCount, ProgressStore.MAX_BADGE_LEVEL)
+    }
+
+    private var isMaxedOut: Bool {
+        rawCount >= ProgressStore.MAX_BADGE_LEVEL
+    }
+
 
     var body: some View {
         VStack(spacing: 8) {
-            Image("badge_\(count)")
+            Image("badge_\(clampedCount)")
                 .resizable()
                 .scaledToFit()
 
-            if isToday {
+            if isToday && !isMaxedOut {
                 HStack(spacing: 6) {
                     Image(systemName: "crown")
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
 
                     ProgressView(value: crownProgress, total: commitThreshold)
-                        .frame(width: 90)     // tune this
-                        .scaleEffect(y: 0.8)  // thinner
+                        .frame(width: 90)
+                        .scaleEffect(y: 0.8)
                 }
             }
+
         }
         .focusable(isToday)
         .digitalCrownRotation(
@@ -58,10 +73,11 @@ struct DayView: View {
         )
         .onChange(of: crownProgress) { _, newValue in
             guard isToday else { return }
+            guard !isMaxedOut else { return }
 
             if newValue >= commitThreshold {
                 ProgressStore.shared.addTap()
-                crownProgress = 0   // reset for next commit
+                crownProgress = 0
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: .progressChanged)) { _ in
