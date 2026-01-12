@@ -9,16 +9,30 @@ import SwiftUI
 
 struct HistoryView: View {
 
-    let days = ProgressStore.shared.allDays()
+    @State private var refreshTick = 0
 
     var body: some View {
+        let days = ProgressStore.shared.allDays()
+
         List(days, id: \.self) { date in
+            let count = ProgressStore.shared.count(for: date)
+            let minor = ProgressStore.shared.crownProgress(for: date)
+
             NavigationLink {
                 DayDetailView(date: date)
             } label: {
-                Text(date.formatted(date: .abbreviated, time: .omitted))
+                HStack {
+                    MiniBadgeView(count: count, minor: minor)
+
+                    Text(date.formatted(date: .abbreviated, time: .omitted))
+
+                    Spacer()
+                }
             }
         }
         .navigationTitle("History")
+        .onReceive(NotificationCenter.default.publisher(for: .progressChanged)) { _ in
+            refreshTick += 1
+        }
     }
 }

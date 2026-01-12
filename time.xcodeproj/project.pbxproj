@@ -15,6 +15,8 @@
 		495F676B2F0FF801008ED6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495F674B2F0FD78B008ED6EC /* Assets.xcassets */; };
 		4961C9262F0FD5900039E6C6 /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961C9252F0FD5900039E6C6 /* ProgressStore.swift */; };
 		4961C9272F0FD5900039E6C6 /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961C9252F0FD5900039E6C6 /* ProgressStore.swift */; };
+		4975271F2F14EBE600FCF069 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975271E2F14EBE000FCF069 /* ColorExtension.swift */; };
+		497527202F14EBE600FCF069 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975271E2F14EBE000FCF069 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		36C958722F0E5CAC008BF43E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		495F674B2F0FD78B008ED6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4961C9252F0FD5900039E6C6 /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
+		4975271E2F14EBE000FCF069 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -141,6 +144,7 @@
 		36C9582A2F0E4959008BF43E = {
 			isa = PBXGroup;
 			children = (
+				4975271E2F14EBE000FCF069 /* ColorExtension.swift */,
 				4969333C2F1440CB003F5894 /* ios */,
 				495F674B2F0FD78B008ED6EC /* Assets.xcassets */,
 				4961C9252F0FD5900039E6C6 /* ProgressStore.swift */,
@@ -314,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4961C9272F0FD5900039E6C6 /* ProgressStore.swift in Sources */,
+				497527202F14EBE600FCF069 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4961C9262F0FD5900039E6C6 /* ProgressStore.swift in Sources */,
+				4975271F2F14EBE600FCF069 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
