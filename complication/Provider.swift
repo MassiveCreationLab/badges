@@ -22,12 +22,35 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
-        let entry = Entry(
-            date: .now,
+
+        let now = Date()
+        let calendar = Calendar.current
+
+        let startOfTomorrow = calendar.startOfDay(
+            for: calendar.date(byAdding: .day, value: 1, to: now)!
+        )
+
+        // Entry for "now"
+        let todayEntry = Entry(
+            date: now,
             count: ProgressStore.shared.todayCount(),
             minor: ProgressStore.shared.todayCrownProgress()
         )
 
-        completion(Timeline(entries: [entry], policy: .never))
+        // Entry for "tomorrow" (will be shown at 00:00)
+        let tomorrowEntry = Entry(
+            date: startOfTomorrow,
+            count: 0,
+            minor: 0
+        )
+
+        let timeline = Timeline(
+            entries: [todayEntry, tomorrowEntry],
+            policy: .atEnd   // after tomorrow entry is shown, system will ask again
+        )
+
+        completion(timeline)
     }
+
+
 }
