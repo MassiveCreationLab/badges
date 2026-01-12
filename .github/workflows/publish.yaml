@@ -1,9 +1,7 @@
-name: badges deployment
+name: badges release
 
 on:
-  push:
-    branches:
-      - "main"
+  release:
 
 jobs:
   deploy:
