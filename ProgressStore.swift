@@ -43,6 +43,12 @@ final class ProgressStore {
         return dict[todayKey()]?.crownProgress ?? 0
     }
 
+    func crownProgress(for date: Date) -> Double {
+        let dict = load()
+        let key = dayKey(for: date)
+        return dict[key]?.crownProgress ?? 0
+    }
+    
     func setTodayCrownProgress(_ value: Double) {
         var dict = load()
         let key = todayKey()

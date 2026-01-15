@@ -9,9 +9,14 @@ import SwiftUI
 
 struct DayView: View {
     let dayOffset: Int
-    let crownProgress: Double
 
     @State private var refreshTick = 0
+    
+    private var crownProgress: Double {
+        _ = refreshTick
+        return ProgressStore.shared.crownProgress(for: date)
+    }
+
 
     private var date: Date {
         Calendar.current.date(byAdding: .day, value: dayOffset, to: Date())!
@@ -38,17 +43,18 @@ struct DayView: View {
                 .resizable()
                 .scaledToFit()
 
-            if isToday && !isMaxedOut {
-                HStack(spacing: 6) {
+            HStack(spacing: 6) {
+                if isToday && !isMaxedOut {
                     Image(systemName: "crown")
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
-
-                    ProgressView(value: crownProgress, total: 1.0)
-                        .frame(width: 90)
-                        .scaleEffect(y: 0.8)
                 }
+
+                ProgressView(value: crownProgress, total: 1.0)
+                    .frame(width: 90)
+                    .scaleEffect(y: 0.8)
             }
+            .opacity(isToday || crownProgress > 0 ? 1 : 0.25)
         }
         .onReceive(NotificationCenter.default.publisher(for: .progressChanged)) { _ in
             refreshTick += 1

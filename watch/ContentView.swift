@@ -26,8 +26,7 @@ struct ContentView: View {
                 TabView(selection: $selectedDayOffset) {
                     ForEach(-7...0, id: \.self) { offset in
                         DayView(
-                            dayOffset: offset,
-                            crownProgress: (offset == 0) ? (accumulated / threshold) : 0
+                            dayOffset: offset
                         )
                         .tag(offset)
                     }
