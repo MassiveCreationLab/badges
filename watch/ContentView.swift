@@ -44,6 +44,13 @@ struct ContentView: View {
                 isHapticFeedbackEnabled: true
             )
             .onAppear { syncFromStore() }
+            .onReceive(
+                NotificationCenter.default.publisher(for: .NSCalendarDayChanged)
+                    .receive(on: RunLoop.main)
+            ) { _ in
+                selectedDayOffset = 0
+                syncFromStore()
+            }
             .onChange(of: selectedDayOffset) { _, newOffset in
                 // Only care when landing back on today
                 if newOffset == 0 { syncFromStore() }
